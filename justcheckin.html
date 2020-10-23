@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang=sv-se>
+<head>
+    <meta charset=utf-8>
+    <title>Om</title>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=x-ua-compatible content="ie=edge">
+    <link rel="shortcut icon" type=image/x-icon href=/images/icons/favicon.ico>
+    <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
+    <script src=https://cdn.snipcart.com/scripts/2.0/snipcart.js id=snipcart data-api-key=Y2E1ZjYxMGMtODNiOS00MzVlLWI1NzYtZTI2YWQzNTJlYzBmNjM2OTkwNDYxODA5MzcxMDAy></script>
+    <link href=https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css type=text/css rel=stylesheet>
+    <script>
+    Snipcart.api.configure('show_cart_automatically', false)
+    </script>
+    <script type=text/javascript src=/js/sv.js></script>
+    <link rel=stylesheet href=/css/tailwind.css>
+    <script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen bg-cover" style=background-image:url(/img/dan-gold-4_jhDO54BYg-unsplash-small.jpg);height:100%>
+    <header class="bg-green-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+        <div class="flex items-center justify-between px-4 py-2 sm:p-0">
+            <div class="h-10 w-10 rounded-full overflow-hidden bg-gray-300 border-2 border-gray-500 focus:outline-none focus:border-white hover:border-green-600">
+                <a href=/>
+                    <img src=/img/logo.png class="h-full w-full object-cover">
+                </a>
+            </div>
+            <div class="sm:ml-20 header__cart">
+                <a href=# class=snipcart-checkout>
+                    <div class="snipcart-summary text-red-500 hover:text-red-700">
+                        <svg class="fill-current h-5 w-5 mt-1" id="Shopping_cart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                            <path d="M13 17c0 1.104.894 2 2 2 1.104.0 2-.896 2-2 0-1.106-.896-2-2-2C13.894 15 13 15.894 13 17zM3 17c0 1.104.895 2 2 2 1.103.0 2-.896 2-2 0-1.106-.897-2-2-2C3.895 15 3 15.894 3 17zM6.547 12.172 17.615 9.01C17.826 8.949 18 8.721 18 8.5V3H4V1.4C4 1.18 3.819 1 3.601 1H.399C.18 1 0 1.18.0 1.4V3h2l1.91 8.957L4 12.9v1.649c0 .219.18.4.4.4H17.6c.22.0.4-.182.4-.4V13H6.752C5.602 13 5.578 12.449 6.547 12.172z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="ml-4 mr-4 header__cart">
+                <a href=# class=snipcart-checkout>
+                    <div class="snipcart-summary text-red-500 font-semibold hover:text-red-700">
+                        <span class="text-sm align-bottom snipcart-total-price"></span>
+                    </div>
+                </a>
+            </div>
+            <div id=burger class="__BURGER block sm:hidden">
+                <button type=button class="__NAV-CONTROL block text-gray-500 hover:text-white focus:text-white focus:outline-none">
+                    <svg id="nav-close" class="hidden h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/>
+                    </svg>
+                    <svg id="nav-open" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav>
+            <div id=nav-menu class="sm:block hidden px-2 pt-2 pb-4 sm:flex sm:p-0">
+                <a href=/menu class="block px-2 py-1 text-white font-semibold rounded hover:bg-green-600">Meny</a>
+                <a href=/about class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-green-600 sm:mt-0 sm:ml-2">Om
+                oss</a>
+                <a href=/about class="mt-1 block px-2 py-1 text-white font-semibold rounded hover:bg-green-600 sm:mt-0 sm:ml-2 mr-2">Kontakt</a>
+                <div class=relative>
+                    <button id=avatar class="__AVATAR relative z-30 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-600 focus:outline-none focus:border-white">
+                        <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar">
+                    </button>
+                    <button id=darkness tabindex=-1 class="__DARKNESS z-20 hidden fixed inset-0 h-full w-full bg-black opacity-50 cursor-default"></button>
+                    <div id=account_menu class="hidden z-20 absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl">
+                        <a href=# class="block px-4 py-2 text-gray-800 hover:bg-green-500 hover:text-white">Mitt konto</a>
+                        <a href=# class="block px-4 py-2 text-gray-800 hover:bg-green-500 hover:text-white">Support</a>
+                        <a href=# class="block px-4 py-2 text-gray-800 hover:bg-green-500 hover:text-white">Logga ut</a>
+                    </div>
+                </div>
+            </div>
+            <div id=droopy class="hidden px-4 py-5 border-t border-gray-800">
+                <div class="flex items-center">
+                    <img class="h-8 w-8 border-2 border-gray-600 rounded-full object-cover" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80" alt="Your avatar">
+                    <span class="ml-3 font-semibold text-white">Jane Doe</span>
+                </div>
+                <div class=mt-4>
+                    <a href=# class="block text-gray-400 hover:text-white">Mitt konto</a>
+                    <a href=# class="mt-2 block text-gray-400 hover:text-white">Support</a>
+                    <a href=# class="mt-2 block text-gray-400 hover:text-white">Logga ut</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script>
+    $(".__AVATAR, .__DARKNESS").on('click', function() {
+        $('#account_menu').toggleClass("hidden");
+        $('#darkness').toggleClass("hidden");
+    });
+    $(function() {
+        $('.__NAV-CONTROL').on('click', function() {
+            $('#nav-menu').toggleClass("hidden");
+            $('#nav-open').toggleClass("hidden");
+            $('#nav-close').toggleClass("hidden");
+            $('#avatar').toggleClass("hidden");
+            $('#droopy').toggleClass("hidden");
+        });
+    });
+    </script>
+    <div id=content class=flex-1>
+        <div id=top-banner>
+            <div class="px-8 text-center text-4xl sm:text-5xl bg-green-800 opacity-75 bg-transparent text-gray-200">Om</div>
+        </div>
+        <div id=bottom-banner class=__TOGGLE_MAP>
+            <div class="flex justify-center h-16 bg-green-500 text-center text-gray-400 cursor-pointer">
+                <h1 class="text-2xl mt-3">
+                    <p>Visa karta</p>
+                </h1>
+                <svg class="h-8 mt-4 ml-2 float-right fill-current" id="Chevron_small_down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                    <path d="M13.418 7.859c.271-.268.709-.268.978.0.27.268.272.701.0.969l-3.908 3.83c-.27.268-.707.268-.979.0l-3.908-3.83c-.27-.267-.27-.701.0-.969.271-.268.709-.268.978.0L10 11 13.418 7.859z"/>
+                </svg>
+                <svg class="hidden mt-4 h-8 ml-2 float-right fill-current" id="Chevron_small_up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" enable-background="new 0 0 20 20">
+                    <path d="M6.582 12.141c-.271.268-.709.268-.978.0s-.272-.701.0-.969l3.908-3.83c.27-.268.707-.268.979.0l3.908 3.83c.27.267.27.701.0.969-.271.268-.709.268-.979.0L10 9 6.582 12.141z"/>
+                </svg>
+            </div>
+        </div>
+        <div id=map class="hidden h-64 sm:h-400 w-full"></div>
+        <div class="px-8 py-2 text-center text-base bg-green-800 opacity-75 bg-transparent text-gray-200">
+            <ul>
+                <li class="font-bold text-xl">Rosentech Datakonsulter</li>
+                <li>Redaretorget 1</li>
+                <li>652 16 Karlstad</li>
+                <li class=font-bold>Sverige</li>
+                <li class="mt-2 hover:underline text-xs">
+                    <a href=tel:+46730391049>0730 39 10 49</a>
+                </li>
+                <li class="hover:underline text-xs">
+                    <a href=mailto:androsen@gmail.com>androsen@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+        var mapShown = false;
+        $(function() {
+            $('.__TOGGLE_MAP').on('click', function() {
+                mapShown = !mapShown;
+                $('#map').slideToggle(500);
+                if (mapShown) {
+                    $('#bottom-banner').find('h1').html('Dölj karta');
+                }
+                else {
+                    $('#bottom-banner').find('h1').html('Visa karta');
+                }
+                $('#Chevron_small_up').toggleClass("hidden");
+                $('#Chevron_small_down').toggleClass("hidden");
+            });
+        });
+        function initMap() {
+            var bryggudden = {
+                lat: 59.375267,
+                lng: 13.510627
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 12,
+                center: bryggudden
+            });
+            var marker = new google.maps.Marker({
+                position: bryggudden,
+                map: map
+            });
+        }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBffuWmuUEhFwuPVyPsQbqkJ8YkUtznCcU&callback=initMap"></script>
+    </div>
+    <footer class="w-full text-center border-t border-gray-600 p-2 pin-b bg-green-900 text-xs text-gray-200">
+        <p class="mb-1 text-center font-hairline text-gray-500 text-xs">Copyright ZiqZaq 2019</p>
+    </footer>
+</body>
+</html>
+

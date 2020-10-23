@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title><MM-List-Name> Infosida</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            h1   {color: mediumslateblue;}
+            p    {color: grey;}
+            /* unvisited link */
+            a:link {
+            color: red;
+            }
+
+            /* visited link */
+            a:visited {
+            color: green;
+            }
+
+            /* mouse over link */
+            a:hover {
+            color: hotpink;
+            }
+
+            /* selected link */
+            a:active {
+            color: blue;
+            }
+        </style>
+    </head>
+    <body class="mt-8 ml-8 mr-8 font-sans text-base text-gray-800 text-left">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+            <h1 class="mt-1 text-2xl font-bold text-center"><MM-List-Name></h1>
+
+            <h2 class="mt-2 text-xl font-bold">Om <MM-List-Name></h2>
+
+            <p class="mt-2"><MM-List-Description></p>
+            
+                <p class="mt-2">För att se arkivet över e-postbrev som skickats till denna lista,  
+                    gå in på arkivet <MM-Archive> för <MM-List-Name>
+                </p>
+
+            <MM-form-end>
+            
+            <h2 class="mt-2 text-xl font-bold">Användning</h2>
+        
+            <p class="mt-2">Hur används e-postlistan <b><MM-List-Name></b>?</p>
+
+            <p class="mt-2">För att skicka ett e-postbrev till alla på listan, skicka det till <a href="mailto:<MM-Posting-Addr>"><MM-Posting-Addr></a>.</p>
+
+            <p class="mt-2">Du kan anmäla dig till listan eller ändra inställningarna för ditt medlemskap på listan nedan:</p>
+
+            <h2 class="mt-2 text-xl font-bold">Anmäl dig till <MM-List-Name></h2>
+              
+            <p class="mt-2">Du kan anmäla dig till [<MM-List-Name>] genom att fylla i nödvändig information nedan.</p> 	  
+            
+            <p class="mt-2">[<MM-List-Subscription-Msg>]</p>  
+
+
+                
+            [<MM-Subscribe-Form-Start>]
+            <p class="mt-2">Din e-postadress: <MM-Subscribe-Box></p>
+            <p class="mt-2">Namn: <mm-fullname-box></p>
+            
+            <p class="mt-2">Om du inte skriver något lösenord, kommer du att automatiskt bli 
+            tilldelad ett. Det kommer att skickas till dig så snart du har bekräftat din anmälan. 
+            Du kan senare begära att få lösenordet skickat till dig eller ändrat.</p>
+
+            [<MM-Reminder>]
+            <p class="mt-2">Önskat lösenord:</p>
+            [<MM-New-Password-Box>]
+            <p class="mt-2">Önskat lösenord en gång till:</p>
+            [<MM-Confirm-Password>]
+            
+            [<mm-recaptcha-ui>]
+            [<mm-captcha-ui>]
+        
+            <p class="mt-2">[<MM-Subscribe-Button>]</p>
+            [<MM-Form-End>]
+        
+            <h2 class="mt-2 text-xl font-bold">Medlemmar av [<MM-List-Name>]</h2>
+
+            [<MM-Roster-Form-Start>]
+            [<MM-Roster-Option>]
+            [<MM-Form-End>]
+            [<MM-Options-Form-Start>]
+            [<MM-Editing-Options>]
+            [<MM-Form-End>]
+        
+            [<MM-Mailman-Footer>]
+
+        <script src="" async defer></script>
+    </body>
+</html>

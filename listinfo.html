@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BRF Bryggudden 1 infosida</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <script src=https://code.jquery.com/jquery-3.4.1.min.js integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=anonymous></script>
+        <style>
+        </style>
+    </head>
+    <body class="bg-gray-100 flex flex-col min-h-screen">
+        <!-- Header, mid section, footer-->
+
+        <!-- Header -->
+        <div class="bg-gray-800 text-gray-200 p-4 w-screen h-auto">
+            <h1 class="text-2xl md:text-4xl text-center">Epostlista BRF Bryggudden 1</h1>
+        </div>
+
+    <!-- Mid section-->
+      <div class="mt-8 ml-8 mr-8 font-sans text-base text-gray-800 text-left flex-grow">
+        <div class="md:flex">
+            <div class="md:flex-shrink-0">
+              <img class="rounded-lg md:w-56" src="http://rosentech.hemsida.eu/images/10D3E214-223B-42FB-A852-BC183B9BFB91.jpeg" width="448" height="299" alt="Bryggudden vintervy">
+            </div>
+            <div class="mt-4 md:mt-0 md:ml-6">
+                <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Gemensam epostlista</div>
+                <h2 class="block mt-1 text-lg leading-tight font-semibold text-gray-900"></h2>
+                <p class="mt-2 text-gray-600">Detta är <span class="font-bold">Bryggudden 1</span>:s webbsida för vår gemensamma epostlista. 
+                    Genom att använda en distributionslista kan föreningen enkelt nå ut med information till alla medlemmar, samtidigt som tjänsten
+                också stöder att medlemmarna använder den för att skicka frågor eller information till alla som är med på listan.</p>
+            </div>
+        </div>
+
+        <div>
+            <p class="mt-2 text-gray-600">För att skicka ett epostbrev till alla på listan, 
+                skicka det till 
+                <a class="hover:text-gray-900 font-bold" href="mailto:testbrf@rosentech.hemsida.eu">testbrf@rosentech.hemsida.eu</a>.</p>
+
+            <p class="mt-2 text-gray-600">Du administrerar själv ditt medlemskap. Använd den här sidan för att registrera dig, eller använd formuläret nedan
+                om du vill avsluta ditt medlemskap.</p>
+                <p class="mt-2 text-gray-600">Detta är en privat lista, vilket betyder att en lista över epostlistans medlemmar 
+                inte är tillgänglig för andra än medlemmarna.</p>
+        </div>
+
+        <h2 class="block mt-1 text-lg leading-tight font-semibold text-gray-900 mt-10">Anmäl dig till listan</h2>
+        
+        <p class="mt-2 text-gray-600">Fyll i namn, epostadress och ett lösenord nedan för att anmäla dig till listan. Ett epostmeddelande
+            kommer att skickas till dig i vilket du slutför registreringen genom att följa instruktionerna. 
+        </p>
+
+        <!-- Subscription form -->
+        <form class="w-full max-w-lg mt-2" method="post" onsubmit="return validateFields();" action="../subscribe/testbrf_rosentech.hemsida.eu">
+                <input name="language" type="hidden" value="sv">
+            
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-name">
+                    Namn
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border 
+                    border-gray-200 rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white" 
+                    required="required"
+                    id="grid-name" 
+                    type="text" 
+                    name="fullname" 
+                    placeholder="Jane Doe">
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                      E-postadress
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border 
+                    border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                    required="required"
+                    id="grid-email" 
+                    type="email" 
+                    name="email" 
+                    placeholder="jane.doe@example.com">
+                </div>
+            </div>
+
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                    Lösenord
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
+                    rounded py-3 px-4 mb-2 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                    required="required"
+                    id="grid-password" 
+                    type="password" 
+                    name="pw" 
+                    placeholder="******************">
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password-again">
+                    Lösenord igen
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
+                    rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                    required="required"
+                    id="grid-password-again" 
+                    type="password" 
+                    name="pw-conf" 
+                    placeholder="******************">
+                </div>
+            </div>
+
+            <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" type="submit" name="email-button" value="Anmäl">
+                Anmäl 
+            </button>
+
+          </form>
+
+
+          <div id="member-banner" class="__TOGGLE_MEMBER">
+            <div class="flex justify-center h-16 text-center text-gray-600 cursor-pointer">
+                <h2 class="text-2xl mt-4">Visa medlemmar</h2>
+                <svg version="1.1" class="h-8 mt-4 ml-2 float-right fill-current" id="Chevron_small_down" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                    enable-background="new 0 0 20 20" xml:space="preserve">
+                    <path d="M13.418,7.859c0.271-0.268,0.709-0.268,0.978,0c0.27,0.268,0.272,0.701,0,0.969l-3.908,3.83 c-0.27,0.268-0.707,0.268-0.979,0l-3.908-3.83c-0.27-0.267-0.27-0.701,0-0.969c0.271-0.268,0.709-0.268,0.978,0L10,11L13.418,7.859z" />
+                </svg>
+                <svg version="1.1" class="hidden mt-4 h-8 ml-2 float-right fill-current" id="Chevron_small_up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                    <path d="M6.582,12.141c-0.271,0.268-0.709,0.268-0.978,0c-0.269-0.268-0.272-0.701,0-0.969l3.908-3.83 c0.27-0.268,0.707-0.268,0.979,0l3.908,3.83c0.27,0.267,0.27,0.701,0,0.969c-0.271,0.268-0.709,0.268-0.979,0L10,9L6.582,12.141z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div id="members" class="hidden">
+          
+            <p class="mt-2 text-gray-600">Skriv in din epostadress och ditt lösenord för att se listan över medlemmar.</p>
+
+            <!-- Show members form -->
+            <form class="w-full max-w-lg mt-2" method="post" action="../roster/testbrf_rosentech.hemsida.eu">
+                <input name="language" type="hidden" value="sv">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        E-postadress
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
+                        rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                        required="required"
+                        id="grid-email-members" 
+                        type="email" 
+                        name="roster-email" 
+                        placeholder="jane.doe@example.com">
+                    </div>
+                    <div class="w-full px-3 md:w-1/2">
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        Lösenord
+                        </label>
+                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 
+                        rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                        required="required"
+                        id="grid-password-member" 
+                        name="roster-pw" 
+                        type="password" 
+                        placeholder="******************">
+                    </div>
+                </div>
+                <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" name="SubscriberRoster" type="submit" value="Anmäl">
+                    Visa
+                </button>
+            </form>
+        </div>
+
+        <!-- Services form -->
+        <div id="settings-banner" class="__TOGGLE_SETTINGS">
+            <div class="flex justify-center h-16 text-center text-gray-600 cursor-pointer">
+                <h2 class="text-2xl mt-4">Ändra inställningar eller avanmäl</h2>
+                <svg version="1.1" class="h-8 mt-4 ml-2 float-right fill-current" id="Chevron_small_down_" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                    enable-background="new 0 0 20 20" xml:space="preserve">
+                    <path d="M13.418,7.859c0.271-0.268,0.709-0.268,0.978,0c0.27,0.268,0.272,0.701,0,0.969l-3.908,3.83 c-0.27,0.268-0.707,0.268-0.979,0l-3.908-3.83c-0.27-0.267-0.27-0.701,0-0.969c0.271-0.268,0.709-0.268,0.978,0L10,11L13.418,7.859z" />
+                </svg>
+                <svg version="1.1" class="hidden mt-4 h-8 ml-2 float-right fill-current" id="Chevron_small_up_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                    x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                    <path d="M6.582,12.141c-0.271,0.268-0.709,0.268-0.978,0c-0.269-0.268-0.272-0.701,0-0.969l3.908-3.83 c0.27-0.268,0.707-0.268,0.979,0l3.908,3.83c0.27,0.267,0.27,0.701,0,0.969c-0.271,0.268-0.709,0.268-0.979,0L10,9L6.582,12.141z"/>
+                </svg>
+            </div>
+        </div>
+        <div id="settings" class="hidden">
+
+        <h2 class="block mt-1 text-lg leading-tight font-semibold text-gray-900 mt-10">Ändra inställningar eller avanmäl</h2>
+        <p class="mt-2 text-gray-600">För att ändra dina personliga inställningar för listan, få lösenord skickat eller ändrat, eller avanmäla dig från listan BRF Bryggudden 1, skriv in din epostadress.</p>
+        <form class="w-full max-w-lg mt-2" method="post" action="../options/testbrf_rosentech.hemsida.eu">
+            <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                        E-postadress
+                    </label>
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 r
+                    ounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" 
+                    required="required"
+                    id="grid-email-services" 
+                    type="email" 
+                    name="email" 
+                    placeholder="jane.doe@example.com">
+                </div>
+            </div>
+            <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded" name="UserOptions" type="submit" value="Anmäl">
+                Ändra
+            </button>
+        </form>
+        </div>
+
+    </div>
+        <!-- Footer section -->
+          <div class="mt-8 bg-gray-800 text-gray-300 text-xs p-4 w-screen h-24">
+              <p>Listan administreras av <a class="hover:text-gray-200 hover:font-bold" href="mailto:testbrf-owner@rosentech.hemsida.eu">testbrf-owner@rosentech.hemsida.eu</a></p>
+          </div>
+
+        <script src="" async defer></script>
+
+        <script>
+
+        var membersShown = false;
+
+        // Use member-banner to show and hide member section
+        $(function () {
+            $('.__TOGGLE_MEMBER').on('click', function () {
+                membersShown = !membersShown;
+                $('#members').slideToggle(500);
+                if (membersShown) {
+                    $('#member-banner').find('h2').html('Dölj');
+                }
+                else {
+                    $('#member-banner').find('h2').html('Visa medlemmar');
+                }
+                $('#Chevron_small_up').toggleClass("hidden");
+                $('#Chevron_small_down').toggleClass("hidden");
+            });
+        });
+        var settingsShown = false;
+
+        // Use member-banner to show and hide member section
+        $(function () {
+            $('.__TOGGLE_SETTINGS').on('click', function () {
+                settingsShown = !settingsShown;
+                $('#settings').slideToggle(500);
+                if (settingsShown) {
+                    $('#settings-banner').find('h2').html('Dölj');
+                }
+                else {
+                    $('#settings-banner').find('h2').html('Ändra inställningar eller avanmäl');
+                }
+                $('#Chevron_small_up_').toggleClass("hidden");
+                $('#Chevron_small_down_').toggleClass("hidden");
+            });
+        });
+
+
+        </script>
+    </body>
+</html>
